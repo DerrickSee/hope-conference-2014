@@ -9,10 +9,24 @@ h1, h2, .nav-link, .playlist-btn {
 	font-weight:100; 
 	text-transform:uppercase;
 }
+
+h1, h2, h3, h4, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
 h1 {
-	font-size:90px;
+  font-size:70px;
 }
-h1, h2, h3, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
+h2 {
+  margin-bottom:0;
+}
+h3 {
+  font-weight: 200;
+  font-size: 16px;
+  margin-top:0;
+}
+h4 {
+  font-weight: 100;
+  font-size: 16px;
+  margin-top:0;
+}
 p { line-height:1.4;  }
 a { color:#fff; font-style:italic; }
 pre {
@@ -23,16 +37,20 @@ pre {
 	word-wrap:break-word;       /* Internet Explorer 5.5+ */
 }
 .open {
-	padding: 100px 0;
+	padding: 10px 0;
+  text-align: center;
 }
-.open h1, .open h2 {
+/*.open {
 	text-align: center;
-}
+}*/
 .box { 
 	background:#444; background:rgba(0,0,0,.6);
 	padding:20px;
 	border-radius:5px;
 	margin-bottom:20px;
+}
+.box h1, .box h2, .box h3, .box h4, .box p {
+  text-shadow: none;
 }
 .credit {
 	margin:20px 0;
@@ -103,9 +121,9 @@ pre {
 /*COUNTDOWN.JS*/
 
 .styled{
-	margin-top: 50px;
-  	margin-bottom: 50px;
-  	text-align: center;
+	margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .styled div {
   	display: inline-block;
@@ -132,4 +150,169 @@ pre {
   	font-weight: normal;
   	text-transform: uppercase;
   	text-align: left;
+}
+/*Style*/
+
+#conference-logo {
+  width: 600px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#speakers h2 {
+  margin-top:40px;
+}
+#registration h2 {
+  margin-top:60px;
+}
+#location h2 {
+  margin-top:45px;
+  margin-bottom:20px;
+}
+
+
+.container {
+  width: 324px; height: 412px;
+  -webkit-perspective: 1000;
+}
+
+.card {
+  width: 324px; height: 412px;
+  border: 8px solid #fff; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+  .container:hover .card {
+    -webkit-transform: rotateY(180deg);       
+  }
+
+.face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.bonnke {
+  display: inline-block;
+  -webkit-transform: rotate(5deg);
+}
+  .bonnke .front {
+    
+  }
+  .bonnke .back {
+    width: 308px; height: 396px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #292929; 
+  }
+  .bonnke .back h2 {
+      margin-top: 0 !important;
+      margin-bottom: 10px;
+    }
+  .bonnke .back h3 {
+      line-height: 1.14 !important;
+      text-transform: none;
+    }
+    .bonnke img {
+      float: right;
+    }
+    
+.rick {
+  display: inline-block;
+  -webkit-transform: rotate(-5deg);
+  margin-left: 100px;
+}
+  .rick h2, .rick h4 {
+    text-align: right;
+  }
+  .rick .front {
+    
+  }
+  .rick .back {
+    width: 308px; height: 396px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #292929; 
+  }
+  .rick .back h2 {
+      text-align: left;
+      margin-top: 0 !important;
+      margin-bottom: 10px;
+    }
+  .rick .back h3 {
+      line-height: 1.14 !important;
+      text-transform: none;
+    }
+    .rick img {
+      float: right;
+    }
+
+.simon {
+  display: inline-block; 
+  -webkit-transform: rotate(-5deg);
+}
+  .simon h2 {
+    margin-top:10px;
+  }
+  .simon .front {
+    
+  }
+  .simon .back {
+    width: 308px; height: 396px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #292929; 
+  }
+  .simon .back h2 {
+      margin-top: 0 !important;
+      margin-bottom: 10px;
+    }
+  .simon .back h3 {
+      line-height: 1.14 !important;
+      text-transform: none;
+    }
+    .simon img {
+      float: right;
+    }
+
+.jeff {
+  display: inline-block; 
+  -webkit-transform: rotate(5deg);
+  margin-left:100px;
+}
+  .jeff h2 {
+    margin-top:10px;
+    text-align: right;
+  }
+  .jeff h4 {
+    text-align: right;
+  }
+  .jeff .front {
+    
+  }
+  .jeff .back {
+    width: 308px; height: 396px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #292929; 
+  }
+  .jeff .back h2 {
+      text-align: left;
+      margin-top: 0 !important;
+      margin-bottom: 10px;
+    }
+  .jeff .back h3 {
+      line-height: 1.14 !important;
+      text-transform: none;
+    }
+    .jeff img {
+      float: right;
+    }
+
+.front {
+  z-index: 10;
+}
+.container:hover .front {
+  z-index: 0;
+} 
+.row {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
 }
