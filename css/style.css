@@ -1,9 +1,12 @@
 * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
+@font-face { font-family: travelcons; src: url('travelcons.ttf'); }
+
 html, body { 
 	margin:0;
-	padding:0;background:#000;
+	padding:0;background:#333;
 	line-height:1;
 	font-family:"Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing:0.8px
 }
 h1, h2, .nav-link, .playlist-btn {
 	font-weight:100; 
@@ -40,9 +43,24 @@ pre {
 	padding: 10px 0;
   text-align: center;
 }
-/*.open {
-	text-align: center;
-}*/
+
+span.travelcon {
+  font-family: travelcons;
+  text-transform: None;
+}
+table
+{
+  border-collapse:collapse;
+  font-family:"Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+}
+table, th, td {
+  border: 1px solid white;
+  color:white;
+}
+th, td {
+  padding: 7px 5px;
+}
 .box { 
 	background:#444; background:rgba(0,0,0,.6);
 	padding:20px;
@@ -72,7 +90,7 @@ pre {
 }
 .main {
 	position:relative;
-	margin:50px 50px 440px 50px;
+	margin:50px 50px 50px 50px;
 	min-width:300px;
 	-webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
 }
@@ -109,7 +127,7 @@ pre {
 	margin-right:10px;
 	border-radius:5px; 
 }
-.dimmed {opacity:.7;}
+.dimmed {opacity:.75;}
 .footer-text {
 	padding:0 20px;
 	font-size:.9em;
@@ -159,11 +177,40 @@ pre {
   margin-right: auto;
 }
 
-#speakers h2 {
-  margin-top:40px;
+#overview h4 {
+  width:70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  letter-spacing:1px
 }
+
 #registration h2 {
-  margin-top:60px;
+  margin-top:20px;
+}
+#registration div.label, #registration div.value {
+  width:350px;
+  display: inline-block;
+}
+#registration table {
+  margin-top:20px;
+  font-weight: 100;
+}
+#registration th {
+  font-weight: 400;
+}
+#registration table th:first-child {
+  width: 400px;
+}
+#registration table th:nth-child(2),
+#registration table th:nth-child(3) {
+  width: 200px;
+}
+
+#registration table td:nth-child(2),
+#registration table td:nth-child(3) {
+  text-align: center;
 }
 #location h2 {
   margin-top:45px;
@@ -315,4 +362,9 @@ pre {
   width:800px;
   margin-left:auto;
   margin-right:auto;
+  margin-top:20px;
+  margin-bottom:60px;
+}
+.row.last {
+  margin-bottom: 30px;
 }
