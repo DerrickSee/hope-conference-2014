@@ -8,6 +8,9 @@
     <meta name="author" content="Hope Church Singapore" />
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bower_components/BigVideo/css/bigvideo.css">
     <link rel="author" href="https://plus.google.com/107766061849006545830"/>
@@ -37,7 +40,7 @@
                   <img src="img/Ps-ReinhardBonnke.png" alt="Reinhard-Bonnke" />
                 </div>
                 <div class="face back">
-                  <h2>Reinhard Bonnke</h2>
+                  <h2 class="tab-hide">Reinhard Bonnke</h2>
                   <h3>Evangelist Reinhard Bonnke is known for his Great Gospel Crusades throughout Africa. These city-wide meetings have grown from 800 to as many as 1,600,000 people attending a single meeting.</h3>
                   <h3>Reinhard Bonnke founded the international ministry of Christ for all Nations, which has recorded 55 million documented decisions for Jesus Christ all around the world. He also hosts the 'Fire Conferences' that aim to equip church leaders and workers for evangelism.</h3>
                 </div>
@@ -52,14 +55,14 @@
                   <img src="img/Ps-Rick.png" alt="Rick-Seaward" />
                 </div>
                 <div class="face back">
-                  <h2>Rick Seaward</h2>
+                  <h2 class="tab-hide">Rick Seaward</h2>
                   <h3>Leader and anointed speaker, Rev Dr Rick Seaward is known for his incredible vision for world evangelization. He is the founding pastor and Apostolic Overseer of Victory Family Centre in Singapore, which has grown to more than 5,000 members since 1977.</h3>
                   <h3>Rick Seaward believes that every local church has a part to play in world missions. Under his leadership, Victory Family Centre innovated the concept of mobilizing 1-year volunteers to pioneer churches in foreign countries, and has to date more than 8000 churches worldwide.</h3>
                 </div>
               </div>
             </div>
           </div>
-
+          <div class="clearfix"></div>
           <div class="row last">
             <div class="container simon">
               <div class="card">
@@ -67,7 +70,7 @@
                   <img src="img/Ps-Simon-Eng.png" alt="Simon-Eng" />
                 </div>
                 <div class="face back">
-                  <h2>Simon Eng</h2>
+                  <h2 class="tab-hide">Simon Eng</h2>
                   <h3>Ps Simon Eng currently serves as the President of Hope International Ministries (HIM) where he looks after various regional churches of Hope.</h3>
                   <h3>Born in Selangor, he pioneered Hope Kuching in 1992, and since then, the church has produced many leaders and pioneers in the movement. Then in 2001, he moved back to Kuala Lumpur to be the Senior Pastor of Hope Kuala Lumpur.</h3>
                   <h3>Pastor Simon loves to minister to build God’s people and is actively serving to fulfill The Great Commission.</h3>
@@ -83,7 +86,7 @@
                   <img src="img/Ps-Jeff.png" alt="Jeff-Chong" />
                 </div>
                 <div class="face back">
-                  <h2>Jeff Chong</h2>
+                  <h2 class="tab-hide">Jeff Chong</h2>
                   <h3>As the Senior Pastor of Hope Church (Singapore), Pastor Jeff is dedicated to see the church fulfill God’s calling and the Great Commission. He has led our Pastoral Division for almost 10 years, leading all the people groups in the church.</h3>
                   <h3>He has also ministered in many countries from Europe, Africa to Australia, teaching and preaching the Word of God to the churches there. Jeff currently also serves as the leader overseeing the Church Growth and Leadership Conferences for Hope International churches.</h3>
                 </div>
@@ -91,6 +94,30 @@
               <h2>Pastor Jeffrey Chong</h2>
               <h4>Senior Pastor of Hope Church Singapore</h4>
             </div>
+          </div>
+
+          <!-- FOR MOBILE DEVICES -->
+          <div class="mobile">
+            <h2>Reinhard Bonnke</h2>
+            <h4>Founder<br/>Christ for All Nations</h4>
+            <h3>Evangelist Reinhard Bonnke is known for his Great Gospel Crusades throughout Africa. These city-wide meetings have grown from 800 to as many as 1,600,000 people attending a single meeting.</h3>
+            <h3>Reinhard Bonnke founded the international ministry of Christ for all Nations, which has recorded 55 million documented decisions for Jesus Christ all around the world. He also hosts the 'Fire Conferences' that aim to equip church leaders and workers for evangelism.</h3>
+            <hr/>
+            <h2>Rick Seaward</h2>
+            <h4>Apostolic Overseer<br/>Victory Family Centre</h4>
+            <h3>Leader and anointed speaker, Rev Dr Rick Seaward is known for his incredible vision for world evangelization. He is the founding pastor and Apostolic Overseer of Victory Family Centre in Singapore, which has grown to more than 5,000 members since 1977.</h3>
+            <h3>Rick Seaward believes that every local church has a part to play in world missions. Under his leadership, Victory Family Centre innovated the concept of mobilizing 1-year volunteers to pioneer churches in foreign countries, and has to date more than 8000 churches worldwide.</h3>
+            <hr/>
+            <h2>Simon Eng</h2>
+            <h4>President<br/>Hope International Ministries</h4>
+            <h3>Ps Simon Eng currently serves as the President of Hope International Ministries (HIM) where he looks after various regional churches of Hope.</h3>
+            <h3>Born in Selangor, he pioneered Hope Kuching in 1992, and since then, the church has produced many leaders and pioneers in the movement. Then in 2001, he moved back to Kuala Lumpur to be the Senior Pastor of Hope Kuala Lumpur.</h3>
+            <h3>Pastor Simon loves to minister to build God’s people and is actively serving to fulfill The Great Commission.</h3>
+            <hr/>
+            <h2>Jeff Chong</h2>
+            <h4>Senior Pastor</br>Hope Church Singapore</h4>
+            <h3>As the Senior Pastor of Hope Church (Singapore), Pastor Jeff is dedicated to see the church fulfill God’s calling and the Great Commission. He has led our Pastoral Division for almost 10 years, leading all the people groups in the church.</h3>
+            <h3>He has also ministered in many countries from Europe, Africa to Australia, teaching and preaching the Word of God to the churches there. Jeff currently also serves as the leader overseeing the Church Growth and Leadership Conferences for Hope International churches.</h3>
           </div>
         </div>
 
@@ -265,6 +292,7 @@
   	<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
     <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
     <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="bower_components/modernizr/modernizr-2.5.3.min.js"></script>
     <script src="http://vjs.zencdn.net/4.0/video.js"></script>
 
     <!-- BigVideo -->
@@ -288,36 +316,20 @@
     
     <!-- BIGVIDEO SCRIPT -->
    <script>
-        var BV;
+      var BV;
 	    $(function() {
             
             // initialize BigVideo
-            BV = new $.BigVideo();
-			BV.init();
-			BV.show('http://vimeo.com/77103871/download?t=1382140589&v=197764199&s=8195f5b8446eab6ed7611b5c1b9e8e30',{ambient:true});
+        BV = new $.BigVideo();
+			  BV.init();
+        if (Modernizr.touch) {
+          BV.show('img/mobile-bg.png');
+        } else {
+          BV.show('http://vimeo.com/77103871/download?t=1382140589&v=197764199&s=8195f5b8446eab6ed7611b5c1b9e8e30',{ambient:true});
+        }
 
-            // Playlist button click starts video
-            $('.playlist-btn').on('click', function(e) {
-                e.preventDefault();
-                BV.show($(this).attr('href'));
-            })
-
-            // Video Play/Pause toggle
-            $('#video-toggle').on('click', function(e) {
-                if (this.checked)   BV.getPlayer().play();
-                else                BV.getPlayer().pause();
-            })
-
-            // set up navigation
-            $('.nav-link').on('click',function(e){
-                e.preventDefault();
-                scrollToSection($(this).attr('href'));
-            })
-
-            function scrollToSection(id) {
-                $('body,html').animate({scrollTop: $(id).offset().top - 50}, 400);
-            }
-	    });
+      });
+			
    </script>
 
 

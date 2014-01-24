@@ -4,7 +4,7 @@
 html, body { 
 	margin:0;
 	padding:0;background:#333;
-	line-height:1;
+	line-height:1.1;
 	font-family:"Helvetica Neue", Helvetica, sans-serif;
   letter-spacing:0.8px
 }
@@ -145,7 +145,7 @@ th, td {
 }
 .styled div {
   	display: inline-block;
-	margin-left: 70px;
+	   margin-left: 70px;
   	font-size: 70px;
   	font-weight: 100;
   	color: white;
@@ -168,6 +168,24 @@ th, td {
   	font-weight: normal;
   	text-transform: uppercase;
   	text-align: left;
+}
+/*Clearfix*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
 }
 /*Style*/
 
@@ -217,10 +235,10 @@ th, td {
   margin-bottom:20px;
 }
 
-
 .container {
   width: 324px; height: 412px;
   -webkit-perspective: 1000;
+  text-align: left;
 }
 
 .card {
@@ -359,12 +377,114 @@ th, td {
   z-index: 0;
 } 
 .row {
-  width:800px;
+  width:90%;
   margin-left:auto;
   margin-right:auto;
   margin-top:20px;
   margin-bottom:60px;
+  text-align: center;
 }
 .row.last {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.mobile {
+  display:none;
+}
+
+/*SCREEN COMPATIBILITY*/
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.tab-hide {
+  display:none;
+}
+.container {
+  width: 300px; height: 383px;
+  -webkit-perspective: 1000;
+}
+
+.card {
+  width: 300px; height: 383px;
+  border: 8px solid #fff; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+  .container:hover .card {
+    -webkit-transform: rotateY(180deg);       
+  }
+
+.face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.face img {
+  width:284px;
+  height:auto;
+}
+
+.bonnke .back, .rick .back,
+.simon .back, .jeff .back {
+  width:284px;
+  height: 365px;
+}
+.rick, .jeff {margin-left:20px;}
+.row {width: 100%;}
+ 
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile {display:block;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  h1 {font-size: 40px;}
+  .main {
+    margin:0;
+    margin-top:50px;
+  }
+  img#conference-logo {width:80%;}
+  .styled div {
+    display: inline-block;
+     margin-left: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    line-height: 1;
+    text-align: right;
+  }
+  #overview h4 {
+    width:90%;
+  }
+  .container {
+    display:none;
+  }
+  .mobile {
+    display:block;
+    margin-top:-30px;
+  }
+  .mobile h3 {
+    line-height: 1.2;
+    font-weight: 100;
+  }
+  .mobile hr {
+    margin: 25px 0;
+  }
+
+  #registration h2 {
+    font-size: 16px;
+  }
+  #registration div.label,
+  #registration div.value {width:100%;}
+  #registration div.value h2 {margin-top:5px;}
+  #location h2 {
+    margin-top:25px;
+  }
 }
